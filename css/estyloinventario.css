@@ -1,0 +1,265 @@
+* {
+    font-family: Helvetica Neue, Arial, sans-serif;
+  }
+
+
+
+  body {
+    background-image: linear-gradient(rgb(106, 171, 74) 25%,pink);
+  }
+  
+  
+  table {
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto 5rem;
+  }
+  
+  th,
+  td {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  tr {
+    background: hsl(50, 50%, 80%);
+  }
+  
+  tr,
+  td {
+    transition: 0.4s ease-in;
+  }
+  
+  tr:first-child {
+    background: hsla(12, 100%, 40%, 0.5);
+  }
+  
+  tr:nth-child(even) {
+    background: hsla(50, 50%, 80%, 0.7);
+  }
+  
+  td:empty {
+    background: hsla(50, 25%, 60%, 0.7);
+  }
+  
+  tr:hover:not(#firstrow),
+  tr:hover td:empty {
+    background: rgb(106, 171, 74);
+    pointer-events: visible;
+  }
+  tr:hover:not(#firstrow) {
+    transform: scale(1.2);
+    font-weight: 700;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+  }
+ 
+  
+
+
+.button-editar{
+  
+    background: #2694ee;
+    border: 1px solid #b4c6eb;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .button-editar:hover,
+  .button-editar:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #42a4ff;
+  }
+  
+  .button-editar:active {
+    opacity: .5;
+  }
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+form {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+.logo_empresa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: 2px;
+}
+  
+  
+.btnsalir{
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #b93636;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 15%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
